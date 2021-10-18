@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Birthstone&display=swap" rel="stylesheet"> 
+    
+    <title>Donut</title>
+</head>
+
+<Style>
+    .body{
+        width:100%;
+        height:50rem;
+        background-image: url(https://wallpaper.dog/large/10995901.jpg); 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #all{
+        width:90%;
+        height:15rem;
+        background-color: #b08968;
+        border-style:dashed;
+        margin-top: 1rem;
+        position: relative;
+        top:2rem;
+    }
+    #ava{
+        border-radius: 50%;
+        background-color:#fefae0;
+        width:30%;
+        height:6rem;
+        position:relative;
+        top:1rem;
+        left:1rem;
+    }
+    h1{
+        font-family: 'Birthstone', cursive;
+        position: absolute;
+        font-size: 2rem;
+        word-break:keep-all;
+    }
+    h2{
+        font-family: 'Birthstone', cursive;
+        position:relative;
+        top:5rem;
+        left:1.2rem;
+        font-size: 1rem;
+        font-weight: bolder;
+        word-break: break-all;
+    }
+    h3{
+        font-family: 'Birthstone', cursive;
+        position:relative;
+        top:0;
+        left:1.2rem;
+        font-size: 1rem;
+        font-weight: bolder;
+        word-break: break-all;
+    }
+    #boxbig1,#boxbig2{
+        width:90%;
+        height:fit-content;
+        background-color:none;
+        margin-top: 5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #box1,#box2,#box3,#box4{
+        width:47%;
+        height:10rem;
+        background-color:#b08968;
+        border-radius: 0.5rem;
+        box-shadow: 2px 4px 4px 2px black;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        cursor: pointer;
+    }
+    #triangle1,#triangle2,#triangle3,#triangle4{
+        margin-top: 1px;
+        width: 0;
+        height: 0;
+        border-radius: 0.5rem;
+        border-left: 75px solid transparent;
+        border-right: 77px solid transparent;
+        border-top: 70px solid #ac805c;
+    }
+    h4{
+        color: #fefae0;
+        font-size: 2rem;
+        font-family: 'Birthstone', cursive;
+        position:absolute;
+        margin-top:6.5rem;
+    }
+    #tempwrite{
+        width: 60%;
+        height:9rem;
+        position: absolute;
+    }
+    #temp{
+        width:100%;
+        height:9rem;
+        position: absolute;
+    }
+    #tempname{
+        width: 50%;
+        height:9rem;
+        float: right;
+        position: relative;
+        top:-5rem;
+        right:1rem;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    #templogo{
+        width:40%;
+        height:9rem;
+        float: right;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+</Style>
+
+<body style="margin:0;padding:0;">
+    <div class="body">
+        <div id="all">
+            <div id="ava"></div>
+            <div id="tempname"><h1>Nguyen Duy Thinh</h1></div>
+            <div id="temp">
+            <div id="tempwrite">
+                <h2>____________________</h2>
+                <h3>____________________</h3>
+            </div>
+            <div id="templogo">
+                <img src="flower.png" style="height: 16rem; width:13rem;position:relative;top:-2rem;">
+                <img src="seal.png" style="height:10rem;width:8rem;position:relative;top:-11.5rem;right:-4rem;">
+            </div>
+        </div>
+        </div>
+        <div id="boxbig1">
+            <div id="box1">
+                <div id="triangle1"></div>
+                <img src="fb.png" style="width:10rem;height:15rem;position:relative;top:-7.5rem;">
+                <h4>Facebook</h4>
+            </div>
+            <div id="box2">
+                <div id="triangle2"></div>
+                <img src="call.png" style="width:10rem;height:15rem;position:relative;top:-7rem;">
+                <h4>Contact</h4>
+            </div>
+        </div>
+        
+        <div id="boxbig2" style="margin-top:3rem;">
+            <div id="box3">
+                <div id="triangle3"></div>
+                <img src="ins.png" style="width:11rem;height:15rem;position:relative;top:-3.3rem;left:2.2rem;">
+                <h4>Instagram</h4>
+            </div>
+            <div id="box4">
+                <div id="triangle4"></div>
+                <img src="email.png" style="width:11rem;height:15rem;position:relative;top:-6.8rem;">
+                <h4>Email</h4>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    const box1=document.querySelector("#box1");
+    
+</script>
+</html>
